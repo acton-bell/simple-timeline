@@ -1,0 +1,47 @@
+.timeline .item {
+  display: flex;
+}
+
+.timeline .line {
+  margin-left: 11px;
+  border-left: solid 4px green;
+  min-height: 25px;
+  flex-grow: 1;
+}
+
+.timeline .item.center-content:first-child .line.before {
+  visibility: hidden;
+}
+
+.timeline .item .line.before {
+  display: none;
+}
+
+.timeline .item.center-content .line.before {
+  display: block;
+}
+
+.timeline .item:last-child .line.after {
+  border-color: red;
+}
+
+.timeline .item .left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.timeline .item .right {
+  padding-bottom: 25px;
+}
+
+.timeline .item.center-content .right {
+  padding-top: 25px;
+}
+
+.timeline .dot {
+  border: solid 1px black;
+  height: 24px;
+  width: 24px;
+}
